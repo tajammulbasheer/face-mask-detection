@@ -1,7 +1,5 @@
 # Face Mask Detection
-![dataset preview](images/for_git.png)
-Face Mask Detection using Convolution Neural Networks and Transfer Learning
-This repository contains a project that focuses on building a face mask detection system using convolutional neural networks and transfer learning techniques. It aims to detect whether a person is wearing a face mask or not in images, saved videos, and real-time video streams.
+![dataset preview](images/image_git.png)
 
 ### Table of Contents
 - [Overview](#overview)
