@@ -1,60 +1,62 @@
-# face_mask_detection
-menu
-ChatGPT
-Enter a message to start a chat.
-
-Download our ChatGPT powered app for Android from Google Play.
-
-You
-Generate a GitHub readme for face mask detection using convolution neural networks and transfer learning and making predictions on images ,saved video and realtime video
-
-ChatGPT
+# Face Mask Detection
+![dataset preview](images/for_git.png)
 Face Mask Detection using Convolution Neural Networks and Transfer Learning
 This repository contains a project that focuses on building a face mask detection system using convolutional neural networks and transfer learning techniques. It aims to detect whether a person is wearing a face mask or not in images, saved videos, and real-time video streams.
 
-Table of Contents
-Installation
-Usage
-Dataset
-Model
-Results
-Contributing
-License
-Installation
-To use this project, you need to have the following dependencies installed:
+### Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Contributing](#contributing)
+- [License](#license)
 
-Python 3.6+
-TensorFlow 2.x
-OpenCV
-NumPy
-Matplotlib
-You can install the required dependencies using pip:
+## Overview
+This repository contains a small project on face mask detection using Convolutional Neural Networks (CNN) and transfer learning techniques. The project utilizes popular pre-trained models such as VGG16, MobileNet, InceptionNet, DenseNet, and more. The tech stack used for implementation includes TensorFlow, Keras, Matplotlib, and OpenCV. The trained models can make predictions on images, saved videos, and real-time video streams.
 
-pip install tensorflow opencv-python numpy matplotlib
-Usage
-First, clone this repository:
-git clone https://github.com/your-username/face-mask-detection.git
-Change to the cloned directory:
-cd face-mask-detection
-To detect face masks in images, run the following command:
-python detect_image.py --image /path/to/your/image.jpg
-To detect face masks in a saved video, run the following command:
-python detect_video.py --video /path/to/your/video.mp4
-To detect face masks in real-time using your webcam, run the following command:
-python detect_realtime.py
-Dataset
-The dataset used to train the face mask detection model can be found at link to dataset. It consists of images of people with and without face masks. The dataset includes annotations for each image indicating whether the person is wearing a face mask or not.
 
-Model
+## Installation
+ Install the required libraries:
+   
+   ```pip install -r requirements.txt```
+   
+   This will install the following libraries:
+   
+   - TensorFlow
+   - Keras
+   - scikit-learn
+   - NumPy
+   - Pandas
+   - Matplotlib
+   - Seaborn
+   - OpenCV
+
+## Usage
+1. First, clone this repository:
+  git clone https://github.com/your-username/face-mask-detection.gi
+2. Change to the cloned directory:
+  cd face_mask_detection
+3. To detect face masks in images, run the following command:
+  python detect_image.py --image /path/to/your/image.jpg
+4. To detect face masks in a saved video, run the following command:
+  python detect_video.py --video /path/to/your/video.mp4
+5. To detect face masks in real-time using your webcam, run the following command:
+  python detect_realtime.py
+
+## Dataset
+The dataset used to train the face mask detection model can be found at link(https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) to dataset. It consists of images of people with and without face masks. The dataset includes annotations for each image indicating whether the person is wearing a face mask or not.
+
+## Model
 The face mask detection model is built using the concept of transfer learning. It utilizes a pre-trained convolutional neural network (CNN) as the base model and adds a few additional layers on top for more specific detection tasks. The base model used here is the VGG16 model, which has been proven effective in a variety of computer vision tasks.
 
-Results
+## Results
 The model achieves an accuracy of XYZ% on the test set. The precision, recall, and F1-score for detecting face masks are as follows:
 
-Precision: XYZ%
-Recall: XYZ%
-F1-score: XYZ%
-Contributing
+-Precision: XYZ%
+-Recall: XYZ%
+-F1-score: XYZ%
+
+## Contributing
 If you would like to contribute to this project, you can follow these steps:
 
 Fork this repository.
@@ -62,5 +64,10 @@ Create a new branch.
 Make your changes and commit them.
 Push the changes to your forked repository.
 Submit a pull request.
-License
+
+
+## Acknowledgments
+I would like to thank the creators of the sign language digits dataset for making it available for research and educational purposes. We would also like to thank the developers of TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, and OpenCV for their contributions to open-source software, which made this project possible.
+
+## License
 This project is licensed under the MIT license. Feel free to use and modify the code as per your needs.
