@@ -1,5 +1,5 @@
 # Face Mask Detection
-![dataset preview](images/image_git.png)
+![dataset preview](images/for_git.png)
 
 ### Table of Contents
 - [Overview](#overview)
