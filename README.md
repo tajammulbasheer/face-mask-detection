@@ -6,15 +6,36 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dataset](#dataset)
-- [Contributing](#contributing)
-- [License](#license)
+- [Model](#model)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 This repository contains a small project on face mask detection using Convolutional Neural Networks (CNN) and transfer learning techniques. The project utilizes popular pre-trained models such as VGG16, MobileNet, InceptionNet, DenseNet, and more. The tech stack used for implementation includes TensorFlow, Keras, Matplotlib, and OpenCV. The trained models can make predictions on images, saved videos, and real-time video streams.
 
-
 ## Installation
- Install the required libraries:
+
+1. Clone the repository:
+
+   ```git clone https://github.com/tajammulbasheer/face-mask-detection.git```
+   
+2. Navigate to the project directory:
+
+   ```cd face-mask-detection```
+   
+3. Create a new virtual environment:
+   
+   ```python -m venv env```
+  
+4. Activate the virtual environment:
+   - On Windows:
+   
+     ```env\Scripts\activate```
+     
+   - On Linux or macOS:
+    
+     ```source env/bin/activate```
+
+5. Install the required libraries:
    
    ```pip install -r requirements.txt```
    
@@ -28,44 +49,51 @@ This repository contains a small project on face mask detection using Convolutio
    - Matplotlib
    - Seaborn
    - OpenCV
+   
+6. Download the dataset:
+
+   Download the Face Mask Dataset from [here](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) on kaggle and extract it to the `dataset` directory.
+
+   The dataset should be organized as follows in side the main directory:
+   
+   ````
+   dataset/Face Mask Dataset
+   ├── Train/
+   │   ├── 0.jpg
+   │   ├── 1.jpg
+   │   ├── ...
+   ├── Test/
+   │   ├── 0.jpg
+   │   ├── 1.jpg
+   │   ├── ...
+   ├── Valid
+   │   ├── 0.jpg
+   │   ├── 1.jpg
+   │   ├── ...
+   ```
+
+   
+7. Run the Jupyter notebooks:
+
+   ```jupyter notebook```
+
+   This will open a new browser window with the list of Jupyter notebooks in the project. You can then open and run the notebooks to train and evaluate the different machine learning models and explore the dataset.
+
+   Note that some of the notebooks may take a long time to run, especially those that involve training deep learning models. You may want to use a GPU for faster training, or use pre-trained models instead.
+
 
 ## Usage
-1. First, clone this repository:
-  git clone https://github.com/your-username/face-mask-detection.gi
-2. Change to the cloned directory:
-  cd face_mask_detection
-3. To detect face masks in images, run the following command:
-  python detect_image.py --image /path/to/your/image.jpg
-4. To detect face masks in a saved video, run the following command:
-  python detect_video.py --video /path/to/your/video.mp4
-5. To detect face masks in real-time using your webcam, run the following command:
-  python detect_realtime.py
+This project was createdd to apply the concepts of transfer learning on real world problems.
+After properly settting up the system following installation above you can open the notebooks and explore them.
+
 
 ## Dataset
-The dataset used to train the face mask detection model can be found at link(https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) to dataset. It consists of images of people with and without face masks. The dataset includes annotations for each image indicating whether the person is wearing a face mask or not.
+The dataset used to train the face mask detection model can be found at [link](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) to dataset. It consists of images of people with and without face masks. The dataset includes partationing images into train, test, valid sets and further more each set has seperate folders for masked faces and non masked face images.
 
 ## Model
-The face mask detection model is built using the concept of transfer learning. It utilizes a pre-trained convolutional neural network (CNN) as the base model and adds a few additional layers on top for more specific detection tasks. The base model used here is the VGG16 model, which has been proven effective in a variety of computer vision tasks.
-
-## Results
-The model achieves an accuracy of XYZ% on the test set. The precision, recall, and F1-score for detecting face masks are as follows:
-
--Precision: XYZ%
--Recall: XYZ%
--F1-score: XYZ%
-
-## Contributing
-If you would like to contribute to this project, you can follow these steps:
-
-Fork this repository.
-Create a new branch.
-Make your changes and commit them.
-Push the changes to your forked repository.
-Submit a pull request.
+The face mask detection model is built using the concept of transfer learning. It utilizes a pre-trained convolutional neural network (CNN) as the base model and adds a few additional layers on top for more specific detection tasks. The base model used here is the VGG19 model, which has been proven effective in a variety of computer vision tasks.
 
 
 ## Acknowledgments
-I would like to thank the creators of the sign language digits dataset for making it available for research and educational purposes. We would also like to thank the developers of TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, and OpenCV for their contributions to open-source software, which made this project possible.
+I would like to thank the creators of face mask dataset for making it available for research and educational purposes. We would also like to thank the developers of TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, and OpenCV for their contributions to open-source software, which made this project possible.
 
-## License
-This project is licensed under the MIT license. Feel free to use and modify the code as per your needs.
